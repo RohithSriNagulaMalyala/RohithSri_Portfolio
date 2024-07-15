@@ -1,101 +1,210 @@
 .project {
-    margin: 50px 0px;
-    margin-left: 120px;
-    margin-right: 120px;
+  margin: 50px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.project hr {
+  border-color: #138781;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.project h2 {
+  font-weight: bold;
+  color: #138781;
+  text-align: center;
+}
+
+.project p {
+  text-align: center;
+  color: #555;
+  line-height: 1.6;
+}
+
+#ads {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: 100%;
+  height: 100%; /* Ensure equal height */
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-image {
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 200px; /* Adjust as needed */
+}
+
+.card .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire container */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card .card-image .card-notify-badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f29f67;
+  color: #fff;
+  padding: 5px 10px;
+  border-top-left-radius: 8px;
+  font-size: 14px;
+}
+
+.card .card-body {
+  padding: 20px;
+  flex: 1; /* Fill remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card .card-body .ad-title {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.card .card-body .technologies {
+  margin-bottom: 10px;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card .card-body .technologies .card-detail-badge {
+  background-color: #e0b50f;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 30px;
+  margin: 5px;
+  font-size: 14px;
+  display: inline-block; /* Ensure badges wrap properly */
+}
+
+.card .card-body .links {
+  text-align: center;
+  margin-top: auto; /* Move links to the bottom */
+}
+
+.card .card-body .links .ad-btn {
+  margin: 5px 10px; /* Adjust margin around buttons */
+  padding: 8px 16px;
+  border-radius: 30px;
+  background-color: #138781;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block; /* Ensure buttons display horizontally */
+}
+
+.card .card-body .links .ad-btn:hover {
+  background-color: #0c6b5f;
+}
+
+/* Modal */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  width: 80%;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+.carousel-caption {
+  text-align: center;
+}
+
+.carousel-caption h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.carousel-caption .technologies {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.carousel-caption .technologies .ad-btn {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #138781;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.carousel-caption .technologies .ad-btn:hover {
+  background-color: #0c6b5f;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px); /* Adjust for padding */
+    margin: 0 10px 20px;
   }
-  
-  .project hr {
-    color: #138781;
-    width: 400px;
-    margin: 10px auto;
+
+  .project {
+    padding: 0 10px;
   }
-  
-  .project h2 {
-    font-weight: bold;
-    color: #138781;
-  }
-  
-  #ads {
-    margin: 30px 0px 30px 0px;
-  }
-  
-  #ads .card-notify-badge {
-    position: absolute;
-    left: -10px;
-    top: -20px;
-    background: #f29f67;
-    text-align: center;
-    border-radius: 30px 30px 30px 30px;
-    color: black;
-    padding: 5px 10px;
-    font-size: 14px;
-  }
-  
-  .project .card img {
-    height: 150px;
+}
+
+@media (max-width: 576px) {
+  .card {
     width: 100%;
+    margin: 0 0 20px;
   }
-  
-  .card-detail-badge {
-    background-color: #e0b50f;
-    text-align: center;
-    border-radius: 30px 30px 30px 30px;
-    color: black;
-    padding: 5px 10px;
-    font-size: 14px;
-  }
-  .card-image-overly {
-    font-size: 20px;
-  }
-  .card-image-overly span {
-    display: inline-block;
-    margin-left: 5px;
-  }
-  
-  .project .card:hover {
-    background-color: white;
-    border-radius: 4px;
-    box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
-    transition: all 1s ease;
-  }
-  
-  .ad-btn {
-    text-transform: uppercase;
-    width: 150px;
-    height: 40px;
-    display: block;
-    text-align: center;
-    background-color: #138781;
-    color: white;
-    border-radius: 80px;
-    font-size: 16px;
-    line-height: 35px;
-    text-decoration: none;
-    margin: 20px auto 20px auto;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .ad-btn:hover {
-    background-color: white;
-    color: #138781;
-    background: transparent;
-    border: 2px solid #138781;
-    transition: all 0.5s ease;
-    box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
-  }
-  
-  /* =============================== */
-  @media (max-width: 600px) {
-    .project {
-      margin: 0;
-      padding: 0;
-      margin-top: 50px;
-    }
-    .project hr {
-      width: 280px;
-    }
-    .project .card {
-      margin-top: 30px;
-    }
-  }
+}

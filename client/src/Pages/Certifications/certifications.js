@@ -7,21 +7,21 @@ const certifications = [
     description: 'A comprehensive course on Python programming.',
     date: 'July-October 2022',
     duration: '4 months',
-    certificateLink: '#'
+    certificateLink: 'https://nptel.ac.in/noc/E_Certificate/NPTEL22CS122S6369296610030926'
   },
   {
     title: 'Web development Course, Internshala',
     description: 'A complete guide to web development.',
     date: 'October-December 2022',
     duration: '3 months',
-    certificateLink: '#'
+    certificateLink: 'https://trainings.internshala.com/s/v/2432602/022c521b'
   },
   {
     title: 'Data Analytics with Python, NPTEL',
     description: 'Data analytics and visualization techniques using Python.',
     date: 'January-April 2023',
     duration: '4 months',
-    certificateLink: '#'
+    certificateLink: 'https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL23CS08S6375779904000376'
   }
 ];
 
