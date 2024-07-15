@@ -32,8 +32,8 @@ function App() {
           <Projects/>
           <WorkExp/>
           <Certifications/>
-          <Achievements/>
           <Roles/>
+          <Achievements/>
           <Activities/>
           <Contact/>
         </div>

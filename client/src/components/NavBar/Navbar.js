@@ -1,25 +1,29 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import './Navbar.css'
+
+  
 const NavigationBar = () => {
+  const [expanded, setExpanded] = useState(false);
+
+  const handleNavClick = () => {
+    setExpanded(false); // Close the navbar when a nav item is clicked
+  };
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
-      {/* Logo or Brand */}
-      <Navbar.Brand href="#home" className="logo">
+    <Navbar bg="dark" variant="dark" expand="lg" fixed="top" expanded={expanded}>
+      <Container fluid>
+        {/* Logo or Brand */}
+        <Navbar.Brand href="#home" className="logo">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzHQv_th9wq3ivQ1CVk7UZRxhbPq64oQrg5Q&usqp=CAU"  // Replace with your logo image URL
-            // width="30"
-            // height="30"
-            // className="d-inline-block align-top"
             alt="Logo"
-            style={{ width: '40px', height: '40px', marginRight: '10px', borderRadius: '50%' , marginLeft:'10px' }}
+            style={{ width: '40px', height: '40px', marginRight: '10px', borderRadius: '50%' }}
           />
         </Navbar.Brand>
-      <Container>
-
+        
         {/* Toggle button for mobile view */}
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)} className="ms-auto" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Link
@@ -30,6 +34,7 @@ const NavigationBar = () => {
               smooth={true}
               offset={-100}  // Adjusted offset for navbar height
               duration={100} // Adjusted duration for smoother scrolling
+              onClick={handleNavClick}
             >
               Home
             </Link>
@@ -41,6 +46,7 @@ const NavigationBar = () => {
               smooth={true}
               offset={-100}
               duration={100}
+              onClick={handleNavClick}
             >
               About
             </Link>
@@ -52,6 +58,7 @@ const NavigationBar = () => {
               smooth={true}
               offset={-100}
               duration={100}
+              onClick={handleNavClick}
             >
               Education
             </Link>
@@ -63,6 +70,7 @@ const NavigationBar = () => {
               smooth={true}
               offset={-100}
               duration={100}
+              onClick={handleNavClick}
             >
               Techstack
             </Link>
@@ -74,6 +82,7 @@ const NavigationBar = () => {
               smooth={true}
               offset={-100}
               duration={100}
+              onClick={handleNavClick}
             >
               Projects
             </Link>
@@ -85,6 +94,7 @@ const NavigationBar = () => {
               smooth={true}
               offset={-100}
               duration={100}
+              onClick={handleNavClick}
             >
               Work Experience
             </Link>
@@ -96,6 +106,7 @@ const NavigationBar = () => {
               smooth={true}
               offset={-100}
               duration={100}
+              onClick={handleNavClick}
             >
               Certifications
             </Link>
@@ -107,6 +118,7 @@ const NavigationBar = () => {
               smooth={true}
               offset={-100}
               duration={100}
+              onClick={handleNavClick}
             >
               Roles & Responsibilities
             </Link>
@@ -118,6 +130,7 @@ const NavigationBar = () => {
               smooth={true}
               offset={-100}
               duration={100}
+              onClick={handleNavClick}
             >
               Achievements
             </Link>
@@ -129,6 +142,7 @@ const NavigationBar = () => {
               smooth={true}
               offset={-100}
               duration={100}
+              onClick={handleNavClick}
             >
               Extra & Co-Curricular
             </Link>
@@ -140,6 +154,7 @@ const NavigationBar = () => {
               smooth={true}
               offset={-100}
               duration={100}
+              onClick={handleNavClick}
             >
               Contact
             </Link>
