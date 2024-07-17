@@ -61,7 +61,7 @@ const Contact = () => {
                 </div>
                 <div className="icons mb-4">
                   <a
-                    href="mailto:youremail@gmail.com"
+                    href="mailto:0710rohithl@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="icon"
@@ -70,7 +70,7 @@ const Contact = () => {
                     <BsEnvelope size={40} />
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/yourprofile"
+                    href="https://www.linkedin.com/in/rohith-sri-nagula-malyala-b95a9a267/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="icon"
@@ -79,7 +79,7 @@ const Contact = () => {
                     <BsLinkedin size={40} />
                   </a>
                   <a
-                    href="https://github.com/yourprofile"
+                    href="https://github.com/RohithSriNagulaMalyala"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="icon"
@@ -135,8 +135,8 @@ const Contact = () => {
                   </div>
                 </form>
                 <div className="contact-details mt-4">
-                  <p><BsTelephone /> +123 456 7890</p>
-                  <p><BsGeoAlt /> 123 Your Street, Your City, Your Country</p>
+                  <p><BsTelephone /> +91 7386699755</p>
+                  <p><BsGeoAlt />  Stanza Living Dijon House, Kokapet, Hyderabad, India</p>
                 </div>
               </div>
             </Rotate>
