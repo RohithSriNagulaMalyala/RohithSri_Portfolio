@@ -1,0 +1,62 @@
+/* Activities.css */
+
+.activities {
+  padding: 20px;
+}
+
+.activities h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.activity-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.activity-item {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.activity-item h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #007bff;
+}
+
+.activity-item p {
+  margin: 5px 0;
+}
+
+.activity-item p.date {
+  font-style: italic;
+  color: #666;
+}
+
+/* Dark Mode */
+#dark .activities h2 {
+  color: #ddd;
+}
+
+#dark .activity-item {
+  background-color: #333;
+  color: #ddd;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+#dark .activity-item h3 {
+  color: #76c7c0;
+}
+
+#dark .activity-item p {
+  color: #ccc;
+}
+
+#dark .activity-item p.date {
+  color: #bbb;
+}
