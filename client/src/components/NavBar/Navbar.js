@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import './Navbar.css'
-
+import photo from "../../Assets/pictures/photo2.jpg"
   
 const NavigationBar = () => {
   const [expanded, setExpanded] = useState(false);
@@ -16,8 +16,9 @@ const NavigationBar = () => {
         {/* Logo or Brand */}
         <Navbar.Brand href="#home" className="logo">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzHQv_th9wq3ivQ1CVk7UZRxhbPq64oQrg5Q&usqp=CAU"  // Replace with your logo image URL
-            alt="Logo"
+            src={photo}
+          alt="profile_pic"
+        
             style={{ width: '40px', height: '40px', marginRight: '10px', borderRadius: '50%' }}
           />
         </Navbar.Brand>

@@ -6,15 +6,29 @@
   background-color: #ffffff;
   border-radius: 10px;
 }
-
+/* 
 .about-img img {
   border-radius: 10px;
   width: 100%;
   height: auto;
+  object-fit: cover;
+} */
+.about-img {
+  display: flex;
+  justify-content: center; /* Center aligns horizontally */
+  align-items: center; /* Center aligns vertically */
+  margin-bottom: 20px; /* Adds space between image and content */
+}
+
+.about-img img {
+  max-width: 100%; /* Ensures image doesn't exceed container width */
+  height: auto; /* Maintains image aspect ratio */
+  border-radius: 10px; /* Adds rounded corners */
 }
 
 .about-content {
-  text-align: center;
+  text-align: justify; /* Justify aligns text */
+  line-height: 1.6;
 }
 
 .about-content h1 {
