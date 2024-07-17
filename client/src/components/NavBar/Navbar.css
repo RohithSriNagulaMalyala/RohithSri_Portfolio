@@ -1,0 +1,56 @@
+/* Navbar.css */
+
+.navbar-nav {
+  margin-left: auto; /* Align items to the right */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Navbar links */
+
+.nav-link {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px; /* Adjust padding */
+    cursor: pointer;
+    margin: 0 10px;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Icon or svg styles */
+  .nav-link svg {
+    margin-right: 10px;
+  }
+  
+  /* Hover effect */
+  .nav-link:hover {
+    color: #10b981 !important; /* Change text color on hover */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  /* Active link styles */
+  .nav-link.active {
+    color: #10b981 !important; /* Change text color for active link */
+    font-weight: bold; /* Example: make active link bold */
+    /* Add any additional styles for active link as needed */
+  }
+  .navbar-toggler {
+    margin-left: auto;
+    top:0px;
+  }
+  .nav-items{
+    position:center;
+  }
+  /* For mobile view */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background-color: #1e1e2c; /* Change to match your theme */
+  }
+
+  .nav-link {
+    margin: 10px 0; /* Stack items with margin between them */
+  }
+}
