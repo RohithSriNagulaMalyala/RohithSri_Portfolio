@@ -1,0 +1,89 @@
+/* Main container for roles */
+.roles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f5f5f5; /* Light mode background color */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.roles h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #444;
+  font-family: 'Arial', sans-serif;
+  border-bottom: 2px solid #444;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+/* Individual role item container */
+.role-item {
+  flex: 1 1 300px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for role item */
+.role-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Title styling within each role item */
+.role-item h3 {
+  margin: 0 0 10px;
+  font-size: 1.3em;
+  color: #032f3c; /* Darker blue color */
+}
+
+/* Paragraph styling within each role item */
+.role-item p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 1em;
+}
+
+/* Dark mode styles */
+#dark .roles {
+  background-color: #121212; /* Dark mode background color */
+  color: #fff; /* Light text color */
+}
+
+#dark .roles .role-item {
+  background-color: #1e1e1e; /* Darker background for items */
+  border-color: #444; /* Darker border color */
+}
+
+#dark .roles .role-item h3 {
+  color: #76c7c0; /* Lighter green text color */
+}
+
+#dark .roles .role-item p {
+  color: #ccc; /* Lighter gray text color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .role-item {
+    flex: 1 1 100%;
+  }
+
+  .role-item h3 {
+    font-size: 1.2em;
+  }
+
+  .role-item p {
+    font-size: 0.9em;
+  }
+}
