@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Rohith_Portfolio/static/css/main.66f44317.css",
+    "main.js": "/Rohith_Portfolio/static/js/main.38cb8871.js",
+    "static/js/453.419a5d54.chunk.js": "/Rohith_Portfolio/static/js/453.419a5d54.chunk.js",
+    "static/media/Rohith_Sri_NagulaMalyala.pdf": "/Rohith_Portfolio/static/media/Rohith_Sri_NagulaMalyala.0c2f5645af9a3a604f03.pdf",
+    "index.html": "/Rohith_Portfolio/index.html",
+    "main.66f44317.css.map": "/Rohith_Portfolio/static/css/main.66f44317.css.map",
+    "main.38cb8871.js.map": "/Rohith_Portfolio/static/js/main.38cb8871.js.map",
+    "453.419a5d54.chunk.js.map": "/Rohith_Portfolio/static/js/453.419a5d54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66f44317.css",
+    "static/js/main.38cb8871.js"
+  ]
+}
